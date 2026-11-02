@@ -1,0 +1,17 @@
+.form { display: grid; gap: 16px; }
+.form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form__field { display: grid; gap: 6px; align-content: start; }
+.form__label { font-weight: 600; font-size: .9375rem; }
+.form__required { color: var(--color-error); }
+.form__input, .form__select, .form__textarea { width: 100%; min-height: 46px; padding: 10px 14px; border: 1.5px solid var(--color-line); border-radius: 10px; background: var(--color-surface); color: var(--color-text); }
+.form__textarea { min-height: 120px; resize: vertical; }
+.form__input:focus, .form__select:focus, .form__textarea:focus { outline: none; border-color: var(--color-focus); box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-focus) 25%, transparent); }
+.form__field--invalid .form__input, .form__field--invalid .form__select, .form__field--invalid .form__textarea { border-color: var(--color-error); }
+.form__hint { font-size: .8125rem; color: var(--color-muted); }
+.form__error { font-size: .8125rem; color: var(--color-error); font-weight: 600; min-height: 1em; }
+.form__error:empty { display: none; }
+.form__check { display: flex; gap: 10px; align-items: flex-start; font-size: .9375rem; }
+.form__check input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--color-accent); }
+.form__actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.form__counter { font-size: .8125rem; color: var(--color-muted); text-align: right; }
+@media (max-width: 640px) { .form__row { grid-template-columns: 1fr; } }

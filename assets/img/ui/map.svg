@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 460" font-family="Manrope, Arial, sans-serif">
+  <rect width="640" height="460" fill="#ECE4D3"/>
+
+  <!-- сквер и пруд -->
+  <path d="M430 300 H640 V460 H470 Q440 400 430 300 Z" fill="#CFDDB6"/>
+  <ellipse cx="560" cy="395" rx="46" ry="24" fill="#B9D3E3"/>
+  <g fill="#B5CB9C"><circle cx="470" cy="330" r="9"/><circle cx="500" cy="352" r="7"/><circle cx="610" cy="330" r="10"/><circle cx="488" cy="420" r="8"/><circle cx="620" cy="440" r="7"/></g>
+  <text x="530" y="335" font-size="12" fill="#5E7448">Ткацкий сквер</text>
+
+  <!-- улицы -->
+  <g fill="#FFFFFF" stroke="#D9CCB4" stroke-width="1">
+    <rect x="-5" y="150" width="650" height="26"/>
+    <rect x="-5" y="282" width="650" height="16"/>
+    <rect x="196" y="-5" width="20" height="470"/>
+    <rect x="412" y="-5" width="16" height="470"/>
+    <path d="M-5 70 L196 40 L196 54 L-5 84 Z"/>
+  </g>
+  <g fill="#7A6455" font-size="11">
+    <text x="470" y="168" font-weight="700" font-size="12" fill="#3B2A20">ул. Портновская</text>
+    <text x="40" y="295">Суконный проезд</text>
+    <text x="461" y="295">Суконный проезд</text>
+    <text transform="translate(210 120) rotate(-90)">Ткацкий пер.</text>
+    <text transform="translate(424 120) rotate(-90)">ул. Шёлковая</text>
+    <text transform="translate(40 76) rotate(-8.5)">Нитяной пер.</text>
+  </g>
+
+  <!-- дома с номерами -->
+  <g fill="#DDD0B8" stroke="#C9B99B">
+    <rect x="18" y="96" width="70" height="44" rx="2"/><rect x="100" y="90" width="84" height="50" rx="2"/>
+    <rect x="228" y="20" width="76" height="118" rx="2"/><rect x="316" y="20" width="84" height="54" rx="2"/><rect x="316" y="84" width="84" height="54" rx="2"/>
+    <rect x="440" y="20" width="84" height="118" rx="2"/><rect x="536" y="20" width="90" height="56" rx="2"/><rect x="536" y="86" width="90" height="52" rx="2"/>
+    <rect x="18" y="190" width="166" height="40" rx="2"/><rect x="18" y="240" width="74" height="30" rx="2"/><rect x="104" y="240" width="80" height="30" rx="2"/>
+    <rect x="440" y="190" width="186" height="80" rx="2"/>
+    <rect x="18" y="312" width="166" height="60" rx="2"/><rect x="18" y="382" width="80" height="66" rx="2"/><rect x="110" y="382" width="74" height="66" rx="2"/>
+    <rect x="228" y="312" width="172" height="136" rx="2"/>
+  </g>
+  <g fill="#8C7A66" font-size="10" text-anchor="middle">
+    <text x="53" y="122">7</text><text x="142" y="119">9</text><text x="266" y="83">11</text><text x="358" y="51">13</text><text x="358" y="115">15</text>
+    <text x="482" y="83">17</text><text x="581" y="52">19</text><text x="581" y="116">21</text>
+    <text x="101" y="214">8</text><text x="55" y="259">10 с1</text><text x="144" y="259">10 с2</text>
+    <text x="101" y="346">3</text><text x="58" y="419">5</text><text x="147" y="419">5 с2</text><text x="314" y="384">4</text>
+  </g>
+
+  <!-- дом 12: двор с аркой со стороны Портновской -->
+  <rect x="228" y="190" width="172" height="80" fill="#F3DCC8" stroke="#B5532E" stroke-width="2"/>
+  <rect x="266" y="212" width="96" height="46" fill="#ECE4D3" stroke="#C9B99B"/>
+  <rect x="306" y="191" width="16" height="22" fill="#ECE4D3"/>
+  <text x="246" y="208" font-size="11" font-weight="700" fill="#8C2F39" text-anchor="middle">12</text>
+  <text x="383" y="208" font-size="9" fill="#8C7A66" text-anchor="middle">арка</text>
+  <rect x="338" y="238" width="16" height="13" rx="2" fill="#7A6455"/><text x="346" y="248.5" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">P</text>
+
+  <!-- метро и остановка -->
+  <g transform="translate(206 163)"><circle r="13" fill="#8C2F39" stroke="#FFFFFF" stroke-width="2"/><text y="4.5" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">М</text></g>
+  <text x="96" y="186" font-size="11" font-weight="700" fill="#8C2F39">м. Ткацкая, выход 2</text>
+  <g transform="translate(372 182)"><rect x="-8" y="-7" width="16" height="14" rx="3" fill="#3F6B3A"/><text y="4" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">А</text></g>
+
+  <!-- пешеходный маршрут -->
+  <path d="M219 166 H314 V224" fill="none" stroke="#8C2F39" stroke-width="3" stroke-dasharray="7 5" stroke-linecap="round"/>
+
+  <!-- метка ателье -->
+  <g transform="translate(296 250) scale(.62)">
+    <path d="M0 -6 C-14 -26 -24 -32 -24 -48 C-24 -62 -13 -72 0 -72 C13 -72 24 -62 24 -48 C24 -32 14 -26 0 -6 Z" fill="#B5532E" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cy="-48" r="8" fill="#FFFFFF"/>
+  </g>
+  <!-- подпись адреса -->
+  <g transform="translate(470 210)">
+    <rect x="-24" y="-20" width="172" height="46" rx="8" fill="#FFFBF2" stroke="#B5532E"/>
+    <text x="-14" y="-2" font-size="12" font-weight="700" fill="#3B2A20">ул. Портновская, 12</text>
+    <text x="-14" y="15" font-size="11" fill="#7A6455">1 этаж, вход со двора</text>
+  </g>
+  <path d="M446 230 L362 236" stroke="#B5532E" stroke-width="1.5"/>
+
+  <!-- масштаб и север -->
+  <g transform="translate(460 448)" font-size="10" fill="#5E7448">
+    <path d="M0 0 H80 M0 -4 V4 M80 -4 V4" stroke="#7A6455" stroke-width="1.5"/>
+    <text x="28" y="-8">100 м</text>
+  </g>
+  <g transform="translate(612 30)"><path d="M0 -14 L7 8 L0 3 L-7 8 Z" fill="#3B2A20"/><text y="22" font-size="10" font-weight="700" text-anchor="middle" fill="#3B2A20">С</text></g>
+</svg>

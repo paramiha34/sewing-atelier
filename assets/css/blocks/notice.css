@@ -1,0 +1,4 @@
+.notice { margin-top: 20px; padding: 12px 16px; border-radius: 10px; border: 1px solid var(--color-line); background: var(--color-surface); border-left: 4px solid var(--color-accent-2); }
+.notice--success { border-left-color: var(--color-success); }
+.notice--error { border-left-color: var(--color-error); }
+.notice--info { border-left-color: var(--color-accent-2); }

@@ -1,0 +1,14 @@
+.account { display: grid; grid-template-columns: 240px 1fr; gap: 40px; padding-top: 40px; align-items: start; }
+.account__aside { position: sticky; top: 96px; display: grid; gap: 16px; }
+.account__hello { color: var(--color-muted); }
+.account__hello strong { color: var(--color-text); font-family: var(--font-display); font-size: 1.5rem; font-weight: 600; }
+.account__title { font-size: 2.6rem; margin-bottom: 20px; }
+.account__lead { color: var(--color-muted); margin-bottom: 8px; }
+.account__updated { font-size: .875rem; color: var(--color-muted); margin-bottom: 20px; }
+.account__section { margin-top: 44px; padding-top: 32px; border-top: 1px dashed var(--color-seam); }
+.account__subtitle { font-size: 2rem; margin-bottom: 18px; }
+.account__form { max-width: 720px; }
+.account__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.account__desc { font-size: .8125rem; color: var(--color-muted); }
+@media (max-width: 860px) { .account { grid-template-columns: 1fr; } .account__aside { position: static; } .account__aside .side-menu { grid-auto-flow: column; overflow-x: auto; } .account__grid { grid-template-columns: repeat(2, 1fr); } }
+.account__main { min-width: 0; }

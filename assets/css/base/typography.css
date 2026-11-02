@@ -1,0 +1,25 @@
+:root {
+  --font-display: "Cormorant Garamond", "Times New Roman", serif;
+  --font-body: "Manrope", "Segoe UI", Arial, sans-serif;
+  --text-sm: .875rem;
+  --text-base: 1rem;
+  --text-lg: 1.1875rem;
+  --text-h3: 1.5rem;
+  --text-h2: clamp(1.9rem, 3.2vw, 2.6rem);
+  --text-h1: clamp(2.6rem, 6vw, 4.6rem);
+}
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.1; letter-spacing: -.01em; }
+h1 { font-size: var(--text-h1); }
+h2 { font-size: var(--text-h2); }
+h3 { font-size: var(--text-h3); }
+a { color: var(--color-link); text-underline-offset: .18em; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 3px; border-radius: 4px; }
+strong { font-weight: 700; }

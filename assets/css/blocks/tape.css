@@ -1,0 +1,13 @@
+/* Сантиметровая лента — фирменный элемент */
+.tape { position: relative; height: 34px; background: var(--tape-bg); color: var(--tape-ink); overflow: hidden; border-block: 1px solid rgba(0,0,0,.12); }
+.tape::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 12px;
+  background:
+    repeating-linear-gradient(90deg, currentColor 0 1px, transparent 1px 10px),
+    repeating-linear-gradient(90deg, currentColor 0 1.5px, transparent 1.5px 50px);
+  background-size: auto 7px, auto 12px; background-repeat: repeat-x; opacity: .75; }
+.tape__numbers { position: absolute; left: 0; right: 0; bottom: 3px; display: flex; font-size: .6875rem; font-weight: 700; white-space: nowrap; }
+.tape__numbers span { flex: 0 0 50px; padding-left: 3px; }
+
+/* На главной лента прилипает к нижнему краю шапки */
+.tape--sticky { position: sticky; top: 72px; z-index: 45; }
+:root[data-ruler="off"] .tape--sticky { position: relative; top: 0; }

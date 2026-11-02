@@ -1,0 +1,13 @@
+.table-wrap { overflow-x: auto; border: 1px solid var(--color-line); border-radius: 12px; background: var(--color-surface); }
+.table { width: 100%; font-size: .9375rem; }
+.table__head { background: var(--color-surface-2); }
+.table__cell { padding: 11px 14px; text-align: left; border-bottom: 1px solid var(--color-line); vertical-align: top; }
+.table__cell--head { font-weight: 700; white-space: nowrap; }
+.table__cell--num { text-align: right; white-space: nowrap; }
+.table__cell--actions { white-space: nowrap; }
+.table__row:last-child .table__cell { border-bottom: 0; }
+.table__empty { padding: 28px; text-align: center; color: var(--color-muted); }
+.status { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: .8125rem; font-weight: 700; background: var(--color-surface-2); border: 1px solid var(--color-line); white-space: nowrap; }
+.status--done { border-color: var(--color-success); color: var(--color-success); }
+.status--cancel { border-color: var(--color-error); color: var(--color-error); }
+.status--active { border-color: var(--color-accent); }

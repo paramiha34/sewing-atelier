@@ -1,0 +1,8 @@
+.rating { display: inline-flex; gap: 2px; color: var(--color-accent); font-size: 1.05rem; letter-spacing: 1px; }
+.rating__empty { color: var(--color-line); }
+.rating-input { display: inline-flex; flex-direction: row-reverse; gap: 4px; border: 0; padding: 0; margin: 0; }
+.rating-input__radio { position: absolute; opacity: 0; }
+.rating-input__star { font-size: 2rem; line-height: 1; color: var(--color-line); cursor: pointer; }
+.rating-input__radio:checked ~ .rating-input__star,
+.rating-input__star:hover, .rating-input__star:hover ~ .rating-input__star { color: var(--color-accent); }
+.rating-input__radio:focus-visible + .rating-input__star { outline: 2px solid var(--color-focus); border-radius: 4px; }

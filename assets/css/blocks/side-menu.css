@@ -1,0 +1,5 @@
+.side-menu { display: grid; gap: 4px; align-content: start; }
+.side-menu__title { font-size: .8125rem; color: var(--color-muted); font-weight: 700; margin: 14px 0 4px; }
+.side-menu__link { display: block; padding: 9px 12px; border-radius: 8px; color: var(--color-text); text-decoration: none; font-weight: 600; font-size: .9375rem; }
+.side-menu__link:hover { background: var(--color-surface-2); }
+.side-menu__link--active { background: var(--color-text); color: var(--color-bg); }

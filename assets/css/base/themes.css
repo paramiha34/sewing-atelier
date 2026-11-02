@@ -1,0 +1,89 @@
+/*
+ * Четыре цветовые темы. Блоки используют только переменные,
+ * поэтому новая тема — это ещё один набор переменных ниже.
+ */
+:root,
+[data-theme="paper"] {
+  --color-bg: #FBF4E6;
+  --color-surface: #FFFBF2;
+  --color-surface-2: #F3E7D0;
+  --color-text: #3B2A20;
+  --color-muted: #7A6455;
+  --color-accent: #B5532E;
+  --color-accent-2: #8C2F39;
+  --color-on-accent: #FFFBF2;
+  --color-link: #8C2F39;
+  --color-line: #D9C3A5;
+  --color-seam: #C8A27F;
+  --color-focus: #8C2F39;
+  --color-success: #3F6B3A;
+  --color-error: #9E2A2B;
+  --hero-bg: radial-gradient(120% 90% at 85% 0%, #F3E2C2 0%, transparent 60%), var(--color-bg);
+  --tape-bg: #E9C46A;
+  --tape-ink: #3B2A20;
+  color-scheme: light;
+}
+
+[data-theme="alpine"] {
+  --color-bg: #EAF1F8;
+  --color-surface: #F8FBFE;
+  --color-surface-2: #D6E4F1;
+  --color-text: #1D2841;
+  --color-muted: #44567A;
+  --color-accent: #F58157;
+  --color-accent-2: #6598CF;
+  --color-on-accent: #1D2841;
+  --color-link: #1D2841;
+  --color-line: #B9CCE0;
+  --color-seam: #93B5CD;
+  --color-focus: #1D2841;
+  --color-success: #2F5F3A;
+  --color-error: #A02C2C;
+  --hero-bg: linear-gradient(180deg, #6598CF 0%, #93B5CD 45%, #C9D9E6 72%, #FFB589 100%);
+  --tape-bg: #FFED8E;
+  --tape-ink: #1D2841;
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --color-bg: #1E1712;
+  --color-surface: #2A211A;
+  --color-surface-2: #352A20;
+  --color-text: #F1E6D2;
+  --color-muted: #BBA992;
+  --color-accent: #E08A5B;
+  --color-accent-2: #C9626B;
+  --color-on-accent: #1E1712;
+  --color-link: #E8A47E;
+  --color-line: #4A3B2E;
+  --color-seam: #6E5843;
+  --color-focus: #E8A47E;
+  --color-success: #8FC08A;
+  --color-error: #F08A8A;
+  --hero-bg: radial-gradient(110% 80% at 85% 0%, #3A2C20 0%, transparent 60%), var(--color-bg);
+  --tape-bg: #C9A253;
+  --tape-ink: #1E1712;
+  color-scheme: dark;
+}
+
+[data-theme="halloween"] {
+  --logo-mark: #FE6F09;
+  --color-bg: #1F120B;
+  --color-surface: #33200F;
+  --color-surface-2: #422914;
+  --color-text: #FFE9C7;
+  --color-muted: #D1B38A;
+  --color-accent: #FF7A1A;
+  --color-accent-2: #C1272D;
+  --color-on-accent: #1F120B;
+  --color-link: #FF9A4D;
+  --color-line: #5A3A1E;
+  --color-seam: #8A5A2B;
+  --color-focus: #FF9A4D;
+  --color-success: #A8D08D;
+  --color-error: #FF8A80;
+  --hero-bg: radial-gradient(90% 70% at 80% 10%, rgba(255,122,26,.28) 0%, transparent 60%), radial-gradient(60% 60% at 10% 100%, rgba(193,39,45,.25) 0%, transparent 70%), var(--color-bg);
+  --tape-bg: #FF7A1A;
+  --tape-ink: #1F120B;
+  color-scheme: dark;
+}

@@ -1,0 +1,8 @@
+.modal { width: min(820px, 100% - 32px); padding: 0; border: 0; border-radius: 16px; background: var(--color-surface); color: var(--color-text); box-shadow: 0 24px 60px rgba(0,0,0,.35); }
+.modal::backdrop { background: rgba(30, 18, 10, .6); }
+.modal__body { display: grid; grid-template-columns: 1.2fr 1fr; }
+.modal__image { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4 / 5; }
+.modal__content { padding: 28px; display: flex; flex-direction: column; gap: 12px; }
+.modal__title { font-size: 2rem; }
+.modal__close { position: absolute; top: 10px; right: 10px; width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--color-line); background: var(--color-surface); font-size: 1.4rem; line-height: 1; }
+@media (max-width: 640px) { .modal__body { grid-template-columns: 1fr; } .modal__image { aspect-ratio: 4 / 3; } }

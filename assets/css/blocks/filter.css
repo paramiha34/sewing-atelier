@@ -1,0 +1,4 @@
+.filter { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.filter__button { padding: 8px 16px; border: 1.5px solid var(--color-line); border-radius: 999px; background: var(--color-surface); font-weight: 600; font-size: .9375rem; color: var(--color-text); text-decoration: none; }
+.filter__button:hover { border-color: var(--color-text); }
+.filter__button--active { background: var(--color-text); color: var(--color-bg); border-color: var(--color-text); }

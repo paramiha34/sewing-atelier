@@ -1,0 +1,25 @@
+/* Линейка слева на всю высоту страницы и перекрестие за курсором (только главная) */
+.ruler { display: none; }
+
+@media (pointer: fine) and (min-width: 1300px) {
+  .ruler { display: block; }
+  :root[data-ruler="off"] .ruler { display: none; }
+
+  .ruler__side { position: absolute; left: 0; top: 0; bottom: 0; width: 30px; z-index: 46; background: var(--tape-bg); color: var(--tape-ink); border-right: 1px solid rgba(0, 0, 0, .12);
+    background-image:
+      repeating-linear-gradient(180deg, currentColor 0 1px, transparent 1px 10px),
+      repeating-linear-gradient(180deg, currentColor 0 1.5px, transparent 1.5px 50px);
+    background-size: 7px auto, 12px auto; background-repeat: repeat-y; background-position: right top, right top; }
+  .ruler__numbers { position: relative; height: 100%; }
+  .ruler__number { position: absolute; left: 3px; font-size: .625rem; font-weight: 700; line-height: 1; transform: translateY(2px); }
+
+  .ruler__line, .ruler__label { position: fixed; left: 0; top: 0; pointer-events: none; opacity: 0; transition: opacity .15s; }
+  .ruler__line { z-index: 44; background: var(--color-text); }
+  .ruler__line--x { width: 1px; bottom: 0; }
+  .ruler__line--y { height: 1px; right: 0; }
+  .ruler__label { z-index: 47; padding: 2px 7px; border-radius: 6px; background: var(--color-text); color: var(--color-bg); font-size: .75rem; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+  .ruler--active .ruler__line { opacity: .22; }
+  .ruler--active .ruler__label { opacity: .9; }
+  .ruler--active.ruler--dim .ruler__label { opacity: 0; }
+}

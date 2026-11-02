@@ -1,0 +1,12 @@
+/* Карточка со «строчкой»: пунктир внутри повторяет шов на ткани */
+.card { position: relative; display: flex; flex-direction: column; gap: 10px; padding: 26px 24px; background: var(--color-surface); border: 1px solid var(--color-line); border-radius: 14px; }
+.card::after { content: ""; position: absolute; inset: 7px; border: 1px dashed var(--color-seam); border-radius: 9px; pointer-events: none; opacity: .8; }
+.card__title { font-size: 1.6rem; }
+.card__text { color: var(--color-muted); }
+.card__meta { margin-top: auto; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding-top: 10px; }
+.card__price { font-weight: 700; font-size: 1.0625rem; }
+.card__link { position: relative; z-index: 1; font-weight: 600; }
+.card--accent { background: var(--color-accent); color: var(--color-on-accent); border-color: var(--color-accent); }
+.card--accent::after { border-color: currentColor; opacity: .45; }
+.card--accent .card__text { color: inherit; opacity: .9; }
+.card--accent .card__link { color: inherit; }

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520">
+  <ellipse cx="210" cy="500" rx="120" ry="12" fill="#3B2A20" opacity=".12"/>
+  <!-- стойка -->
+  <rect x="203" y="330" width="14" height="150" rx="4" fill="#5B4232"/>
+  <path d="M140 490 L210 470 L280 490" fill="none" stroke="#5B4232" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- манекен -->
+  <path d="M170 60 C170 40 250 40 250 60 L258 82 C300 92 318 120 312 160 C306 196 290 214 284 240 C278 268 292 300 300 330 L120 330 C128 300 142 268 136 240 C130 214 114 196 108 160 C102 120 120 92 162 82 Z" fill="#E7CDA8"/>
+  <path d="M170 60 C170 40 250 40 250 60 L258 82 C300 92 318 120 312 160 C306 196 290 214 284 240 C278 268 292 300 300 330 L120 330 C128 300 142 268 136 240 C130 214 114 196 108 160 C102 120 120 92 162 82 Z" fill="none" stroke="#3B2A20" stroke-width="2.5"/>
+  <rect x="190" y="28" width="40" height="22" rx="6" fill="#5B4232"/>
+  <!-- центральный шов -->
+  <path d="M210 60 C206 160 214 240 210 330" fill="none" stroke="#B5532E" stroke-width="2" stroke-dasharray="6 6"/>
+  <!-- выкройка, приколотая к манекену -->
+  <path d="M220 120 L290 132 L282 228 L236 236 Z" fill="#FFFBF2" stroke="#3B2A20" stroke-width="2"/>
+  <path d="M230 132 L284 142 M228 150 L282 160" stroke="#C8A27F" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <circle cx="226" cy="126" r="4" fill="#8C2F39"/><circle cx="284" cy="136" r="4" fill="#8C2F39"/>
+  <!-- сантиметровая лента -->
+  <path d="M150 84 C160 150 120 230 96 300 C88 324 92 352 104 372" fill="none" stroke="#E9C46A" stroke-width="18" stroke-linecap="round"/>
+  <path d="M150 84 C160 150 120 230 96 300 C88 324 92 352 104 372" fill="none" stroke="#3B2A20" stroke-width="2" stroke-dasharray="1.5 7" opacity=".7"/>
+  <path d="M258 84 C270 110 296 120 318 116" fill="none" stroke="#E9C46A" stroke-width="18" stroke-linecap="round"/>
+  <path d="M258 84 C270 110 296 120 318 116" fill="none" stroke="#3B2A20" stroke-width="2" stroke-dasharray="1.5 7" opacity=".7"/>
+  <!-- ножницы -->
+  <g transform="translate(300 380) rotate(-25)">
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#8C2F39" stroke-width="6"/>
+    <circle cx="34" cy="0" r="14" fill="none" stroke="#8C2F39" stroke-width="6"/>
+    <path d="M10 -10 L70 -64 M24 -10 L-24 -70" stroke="#5B4232" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <!-- катушка -->
+  <g transform="translate(70 410)">
+    <rect x="0" y="0" width="56" height="12" rx="3" fill="#5B4232"/>
+    <rect x="6" y="12" width="44" height="46" fill="#B5532E"/>
+    <path d="M6 22 H50 M6 32 H50 M6 42 H50" stroke="#8C2F39" stroke-width="2"/>
+    <rect x="0" y="58" width="56" height="12" rx="3" fill="#5B4232"/>
+  </g>
+</svg>
