@@ -7,9 +7,9 @@ require_once __DIR__ . '/helpers.php';
 require_once __DIR__ . '/logo.php';
 
 $page = array_merge(['title' => '', 'id' => '', 'blocks' => [], 'scripts' => []], $page ?? []);
-$commonBlocks = ['header', 'nav', 'theme-switcher', 'button', 'notice', 'footer', 'progress'];
+$commonBlocks = ['header', 'nav', 'theme-switcher', 'button', 'notice', 'footer', 'progress', 'pumpkin', 'candy-rain'];
 $blocks = array_unique(array_merge($commonBlocks, $page['blocks']));
-$scripts = array_unique(array_merge(['app', 'blocks/theme-switcher', 'blocks/nav', 'blocks/pjax'], $page['scripts']));
+$scripts = array_unique(array_merge(['app', 'blocks/theme-switcher', 'blocks/nav', 'blocks/pjax', 'blocks/candy-rain'], $page['scripts']));
 $current = basename($_SERVER['PHP_SELF']);
 $user = current_user();
 $isHome = $page['id'] === 'home';
@@ -59,7 +59,6 @@ $menu = [
 <header class="header">
     <div class="header__inner container">
         <a class="header__logo logo" href="index.php" aria-label="Лекало — на главную">
-            <img class="logo__pumpkin" src="assets/img/ui/pumpkin.svg" alt="" width="44" height="45">
             <?= logo_svg('logo') ?>
         </a>
 
@@ -105,6 +104,10 @@ $menu = [
         </nav>
     </div>
 </header>
+<button class="pumpkin" type="button" title="Угоститься конфетами" data-candy-rain>
+    <img class="pumpkin__image" src="assets/img/ui/pumpkin.svg" alt="" width="46" height="47">
+    <span class="visually-hidden">Высыпать конфеты</span>
+</button>
 
 <main class="page__main" id="main" tabindex="-1">
 <?php foreach (take_flashes() as $f): ?>

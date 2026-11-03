@@ -9,10 +9,14 @@ $works = db_all(
      JOIN service_types st ON st.id_service_type = w.id_service_type
      ORDER BY w.created_at DESC'
 );
+//в фильтре только те типы, по которым есть работы
+$usedTypes = array_column($works, 'id_service_type');
+$types = array_values(array_filter($types, fn($t) => in_array($t['id_service_type'], $usedTypes)));
 ?>
 <div class="container">
     <header class="page-head">
         <h1 class="page-head__title">Примеры работ</h1>
+        <p class="page-head__slogan">«Шитьё сродни волшебству»</p>
         <p class="page-head__lead">Вещи, которые мы сшили, починили и подогнали за последние месяцы. Нажмите на работу, чтобы прочитать о ней.</p>
     </header>
 
@@ -27,7 +31,7 @@ $works = db_all(
 <?php foreach ($works as $w):
     $img = 'assets/img/works/' . $w['image']; ?>
         <li class="works__item" data-filter-item="<?= (int)$w['id_service_type'] ?>"<?= $active && $active !== (int)$w['id_service_type'] ? ' hidden' : '' ?>>
-            <button class="work" type="button" data-modal-open data-image="<?= e($img) ?>" data-title="<?= e($w['title']) ?>" data-text="<?= e($w['description']) ?>" data-kind="<?= e($w['type_name']) ?>, <?= date_ru($w['created_at']) ?>" data-link="<?= e($w['character_url'] ?? '') ?>">
+            <button class="work" type="button" data-modal-open data-image="<?= e($img) ?>" data-title="<?= e($w['title']) ?>" data-text="<?= e($w['description']) ?>" data-kind="<?= e($w['type_name']) ?>, <?= date_ru($w['created_at']) ?>" data-link="<?= e($w['character_url'] ?? '') ?>" data-character="<?= e($w['character_info'] ?? '') ?>">
                 <img class="work__image" src="<?= e($img) ?>" alt="<?= e($w['title']) ?>" width="400" height="500" loading="lazy">
                 <span class="work__caption">
                     <span class="work__title"><?= e($w['title']) ?></span>
@@ -47,7 +51,11 @@ $works = db_all(
             <p class="modal__type"></p>
             <h2 class="modal__title" id="modal-title"></h2>
             <p class="modal__text"></p>
-            <a class="modal__extra" href="#" target="_blank" rel="noopener" hidden>Персонаж на Shikimori</a>
+            <div class="modal__character" hidden>
+                <p class="modal__character-title">О персонаже</p>
+                <p class="modal__character-text"></p>
+                <a class="modal__extra" href="#" target="_blank" rel="noopener">Персонаж на Shikimori</a>
+            </div>
             <a class="button" href="services.php">Узнать цену</a>
         </div>
     </div>

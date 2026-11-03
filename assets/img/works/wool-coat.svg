@@ -1,1 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EFE6D8"/><stop offset="1" stop-color="#DCCBB0"/></linearGradient><pattern id="p" width="26" height="26" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0 V26" stroke="#5B4232" stroke-width="5" opacity=".12"/></pattern></defs><rect width="800" height="1000" fill="url(#g)"/><rect width="800" height="1000" fill="url(#p)"/><path d="M400 90 C400 70 420 66 420 50 C420 36 408 28 396 30 C386 32 380 40 380 48" fill="none" stroke="#5B4232" stroke-width="8" stroke-linecap="round"/><path d="M400 92 L230 170 H570 Z" fill="none" stroke="#5B4232" stroke-width="10" stroke-linejoin="round"/><ellipse cx="400" cy="955" rx="230" ry="18" fill="#000" opacity=".12"/><path d="M300 170 L250 210 L190 520 L250 540 L292 340 L284 880 L516 880 L508 340 L550 540 L610 520 L550 210 L500 170 L400 260 Z" fill="#B88A5A"/><path d="M300 170 L400 260 L360 330 L330 230 Z M500 170 L400 260 L440 330 L470 230 Z" fill="#9C7146"/><path d="M400 260 L400 880" stroke="#7A5634" stroke-width="5"/><circle cx="380" cy="420" r="11" fill="#3B2A20"/><circle cx="380" cy="540" r="11" fill="#3B2A20"/><circle cx="380" cy="660" r="11" fill="#3B2A20"/><path d="M300 620 H360 M440 620 H500" stroke="#7A5634" stroke-width="6" stroke-linecap="round"/><path d="M292 352 L288 870 M508 352 L512 870" stroke="#E7D3B5" stroke-width="3" stroke-dasharray="7 7"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000"><defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F1E8DA"/><stop offset="1" stop-color="#DDCBB1"/></linearGradient><pattern id="pt" width="28" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0 V28" stroke="#5B4232" stroke-width="4" opacity=".09"/></pattern></defs><rect width="800" height="1000" fill="url(#bg)"/><rect width="800" height="1000" fill="url(#pt)"/><ellipse cx="400" cy="958" rx="250" ry="20" fill="#3B2A20" opacity=".13"/><path d="M400 130 V108 C400 96 416 92 416 76 C416 61 403 53 390 55 C379 57 373 66 375 75" fill="none" stroke="#5B4232" stroke-width="8" stroke-linecap="round"/><path d="M400 130 C352 152 276 186 218 208 C204 213 207 228 220 228 H580 C593 228 596 213 582 208 C524 186 448 152 400 130 Z" fill="none" stroke="#5B4232" stroke-width="9" stroke-linejoin="round"/>
+<!-- рукава сужаются к манжете -->
+<path d="M266 234 C238 238 220 252 214 282 L194 610 C193 626 202 636 216 636 H244 C256 636 262 628 263 614 L282 330 Z" fill="#9C6B3F"/>
+<path d="M534 234 C562 238 580 252 586 282 L606 610 C607 626 598 636 584 636 H556 C544 636 538 628 537 614 L518 330 Z" fill="#9C6B3F"/>
+<path d="M196 590 L263 594 M604 590 L537 594" stroke="#7E5532" stroke-width="16"/>
+<path d="M232 300 L212 600" stroke="#B9875A" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+<!-- воротник сзади -->
+<path d="M326 238 C356 220 444 220 474 238 L462 250 C432 238 368 238 338 250 Z" fill="#7E5532"/>
+<!-- подкладка в разрезе ворота -->
+<path d="M360 234 L400 470 L440 234 Z" fill="#8C2F39"/>
+<!-- полочки пальто -->
+<path d="M262 236 C300 228 340 226 360 232 L400 470 L400 912 C340 916 280 912 238 904 L254 470 C258 380 262 300 262 236 Z" fill="#C08A57"/>
+<path d="M538 236 C500 228 460 226 440 232 L400 470 L400 912 C460 916 520 912 562 904 L546 470 C542 380 538 300 538 236 Z" fill="#C08A57"/>
+<path d="M262 236 C262 300 258 380 254 470 L238 904 C252 906 266 908 280 909 L292 470 C294 380 292 300 290 240 Z" fill="#D7A774" opacity=".6"/>
+<!-- лацканы -->
+<path d="M360 232 L330 236 L316 268 L346 286 L332 300 L392 446 Z" fill="#9C6B3F"/>
+<path d="M440 232 L470 236 L484 268 L454 286 L468 300 L408 446 Z" fill="#9C6B3F"/>
+<!-- борт, пуговицы, карманы -->
+<path d="M400 470 V912" stroke="#7E5532" stroke-width="3"/>
+<path d="M408 476 V906 M246 892 C300 902 500 902 554 892" stroke="#7E5532" stroke-width="2" stroke-dasharray="7 6" fill="none" opacity=".9"/>
+<g fill="#4A3426"><circle cx="368" cy="530" r="9"/><circle cx="432" cy="530" r="9"/><circle cx="368" cy="620" r="9"/><circle cx="432" cy="620" r="9"/><circle cx="368" cy="710" r="9"/><circle cx="432" cy="710" r="9"/></g>
+<path d="M280 700 H350 L346 726 H284 Z M520 700 H450 L454 726 H516 Z" fill="#9C6B3F"/>
+</svg>

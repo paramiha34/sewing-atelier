@@ -5,6 +5,8 @@ App.on(function (scope) {
     var title = dialog.querySelector('.modal__title');
     var text = dialog.querySelector('.modal__text');
     var kind = dialog.querySelector('.modal__type');
+    var character = dialog.querySelector('.modal__character');
+    var characterText = dialog.querySelector('.modal__character-text');
     var extra = dialog.querySelector('.modal__extra');
 
     document.querySelectorAll('[data-modal-open]').forEach(function (btn) {
@@ -14,13 +16,12 @@ App.on(function (scope) {
         title.textContent = btn.dataset.title;
         text.textContent = btn.dataset.text;
         kind.textContent = btn.dataset.kind;
-        //ссылка на персонажа есть только у косплея
-        if (btn.dataset.link) {
-          extra.hidden = false;
-          extra.href = btn.dataset.link;
-        } else {
-          extra.hidden = true;
-        }
+        //блок о персонаже есть только у косплея: описание и ссылка с Shikimori
+        character.hidden = !btn.dataset.link && !btn.dataset.character;
+        characterText.textContent = btn.dataset.character || '';
+        characterText.hidden = !btn.dataset.character;
+        extra.hidden = !btn.dataset.link;
+        if (btn.dataset.link) extra.href = btn.dataset.link;
         dialog.showModal();
       });
     });

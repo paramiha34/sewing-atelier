@@ -1,0 +1,14 @@
+/* Слой падающих конфет поверх страницы, клики проходят сквозь него */
+.candy-rain { position: fixed; inset: 0; z-index: 90; overflow: hidden; pointer-events: none; }
+.candy-rain__item { position: absolute; top: 0; transform: translate3d(0, -120px, 0); left: var(--x); width: var(--size); will-change: transform; animation: candy-fall var(--time) cubic-bezier(.35, .05, .65, 1) both; }
+.candy-rain__item svg { display: block; width: 100%; height: auto; filter: drop-shadow(0 3px 3px rgba(0, 0, 0, .25)); }
+.candy-rain__item--star svg { filter: drop-shadow(0 0 4px rgba(255, 255, 255, .8)); animation: candy-twinkle .6s ease-in-out infinite alternate; }
+
+@keyframes candy-fall {
+  from { transform: translate3d(0, -120px, 0) rotate(var(--r0)); }
+  to { transform: translate3d(var(--dx), calc(100vh + 80px), 0) rotate(var(--r1)); }
+}
+@keyframes candy-twinkle {
+  from { opacity: .55; transform: scale(.8); }
+  to { opacity: 1; transform: scale(1.1); }
+}

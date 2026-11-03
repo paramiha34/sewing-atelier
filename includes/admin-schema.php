@@ -55,6 +55,7 @@ const ADMIN_TABLES = [
         'description'     => ['label' => 'Описание', 'type' => 'textarea'],
         'image'           => ['label' => 'Файл изображения', 'type' => 'text', 'required' => true, 'max' => 255],
         'character_url'   => ['label' => 'Персонаж на Shikimori', 'type' => 'url'],
+        'character_info'  => ['label' => 'О персонаже', 'type' => 'textarea'],
         'created_at'      => ['label' => 'Дата', 'type' => 'date', 'required' => true],
     ]],
     'collaborations' => ['title' => 'Коллаборации', 'pk' => 'id_collaboration', 'columns' => [

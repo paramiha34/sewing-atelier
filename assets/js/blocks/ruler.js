@@ -115,10 +115,21 @@
 
   //обработчики общие для всего документа, вешаем один раз
   document.addEventListener('mousemove', schedule, { passive: true });
-  document.addEventListener('mouseleave', function () {
+  //Курсор ушёл за пределы окна (например, на второй монитор): прячем линии и подписи так же,
+  //как над самой линейкой, и забываем последнюю позицию, чтобы прокрутка не вернула их на старое место.
+  //Снова появятся при первом движении мыши там, куда вернётся курсор.
+  function leave() {
+    lastEvent = null;
+    if (frame) cancelAnimationFrame(frame);
+    frame = 0;
     var p = parts();
     if (p) hide(p);
+  }
+  root.addEventListener('mouseleave', leave);
+  document.addEventListener('mouseout', function (e) {
+    if (!e.relatedTarget) leave();
   });
+  window.addEventListener('blur', leave);
   window.addEventListener('scroll', function () {
     if (lastEvent) schedule(lastEvent);
   }, { passive: true });

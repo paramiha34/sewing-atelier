@@ -1,1 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6E3D6"/><stop offset="1" stop-color="#E9C9B6"/></linearGradient><pattern id="p" width="14" height="14" patternUnits="userSpaceOnUse"><path d="M0 7 H14 M7 0 V14" stroke="#8C2F39" stroke-width="1" opacity=".18"/></pattern></defs><rect width="800" height="1000" fill="url(#g)"/><rect width="800" height="1000" fill="url(#p)"/><path d="M400 90 C400 70 420 66 420 50 C420 36 408 28 396 30 C386 32 380 40 380 48" fill="none" stroke="#5B4232" stroke-width="8" stroke-linecap="round"/><path d="M400 92 L230 170 H570 Z" fill="none" stroke="#5B4232" stroke-width="10" stroke-linejoin="round"/><ellipse cx="400" cy="955" rx="230" ry="18" fill="#000" opacity=".12"/><path d="M330 160 C336 220 330 260 318 300 L360 330 C344 420 300 600 220 930 L580 930 C500 600 456 420 440 330 L482 300 C470 260 464 220 470 160 C440 190 360 190 330 160 Z" fill="#8C2F39"/><path d="M318 300 C380 340 420 340 482 300" fill="none" stroke="#5E1C24" stroke-width="10"/><path d="M360 340 C340 520 300 700 250 920" fill="none" stroke="#B0475A" stroke-width="6" opacity=".6"/><path d="M440 340 C460 520 500 700 550 920" fill="none" stroke="#5E1C24" stroke-width="4" stroke-dasharray="7 7" opacity=".6"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000"><defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7E7DC"/><stop offset="1" stop-color="#EBCDBB"/></linearGradient><pattern id="pt" width="16" height="16" patternUnits="userSpaceOnUse"><path d="M0 8 H16 M8 0 V16" stroke="#8C2F39" stroke-width="1" opacity=".13"/></pattern></defs><rect width="800" height="1000" fill="url(#bg)"/><rect width="800" height="1000" fill="url(#pt)"/><ellipse cx="400" cy="958" rx="250" ry="20" fill="#3B2A20" opacity=".13"/><path d="M400 130 V108 C400 96 416 92 416 76 C416 61 403 53 390 55 C379 57 373 66 375 75" fill="none" stroke="#5B4232" stroke-width="8" stroke-linecap="round"/><path d="M400 130 C352 152 276 186 218 208 C204 213 207 228 220 228 H580 C593 228 596 213 582 208 C524 186 448 152 400 130 Z" fill="none" stroke="#5B4232" stroke-width="9" stroke-linejoin="round"/>
+<!-- бретели -->
+<path d="M332 226 C334 252 336 272 338 292 M468 226 C466 252 464 272 462 292" stroke="#6B1F2A" stroke-width="7" stroke-linecap="round" fill="none"/>
+<!-- юбка: клёш в пол -->
+<path d="M342 462 C320 560 262 720 186 924 C300 948 500 948 614 924 C538 720 480 560 458 462 Z" fill="#8C2F39"/>
+<path d="M370 470 C356 600 320 760 288 938 L340 942 C350 780 372 610 384 470 Z" fill="#6B1F2A" opacity=".55"/>
+<path d="M430 470 C446 600 490 760 528 936 L470 942 C452 780 428 610 416 470 Z" fill="#6B1F2A" opacity=".45"/>
+<path d="M350 470 C330 590 280 750 222 928" stroke="#B14A5C" stroke-width="10" stroke-linecap="round" fill="none" opacity=".55"/>
+<path d="M400 470 C402 620 404 780 406 944" stroke="#B14A5C" stroke-width="6" stroke-linecap="round" fill="none" opacity=".35"/>
+<path d="M186 924 C300 948 500 948 614 924" stroke="#6B1F2A" stroke-width="5" fill="none"/>
+<path d="M200 912 C304 934 496 934 600 912" stroke="#E9C46A" stroke-width="2.5" stroke-dasharray="8 7" fill="none" opacity=".8"/>
+<!-- лиф с вырезом «сердечком» -->
+<path d="M316 300 C330 276 352 276 372 292 C384 302 392 312 400 318 C408 312 416 302 428 292 C448 276 470 276 484 300 C478 356 466 406 460 448 L340 448 C334 406 322 356 316 300 Z" fill="#8C2F39"/>
+<path d="M330 304 C340 290 354 290 366 300 C350 340 350 400 352 446 L340 448 C334 406 324 356 330 304 Z" fill="#B14A5C" opacity=".55"/>
+<path d="M372 300 C376 350 378 400 376 446 M428 300 C424 350 422 400 424 446" stroke="#6B1F2A" stroke-width="2.5" stroke-dasharray="6 6" fill="none"/>
+<!-- пояс -->
+<path d="M338 446 H462 L460 470 H340 Z" fill="#6B1F2A"/>
+<path d="M346 458 H454" stroke="#E9C46A" stroke-width="2" stroke-dasharray="6 6" opacity=".8"/>
+</svg>

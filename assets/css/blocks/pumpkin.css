@@ -1,0 +1,13 @@
+/* Тыква в теме «Хэллоуин»: отдельная кнопка, по нажатию сыплются конфеты.
+   Стоит вне шапки и вне потока, поэтому логотип не сдвигается при смене темы */
+.pumpkin { display: none; position: fixed; z-index: 55; top: 12px; left: calc(50% - 600px - 62px); width: 46px; padding: 0; border: 0; background: none; cursor: pointer; line-height: 0; }
+.pumpkin__image { width: 100%; height: auto; transition: transform .2s; }
+.pumpkin:hover .pumpkin__image { transform: rotate(-8deg) scale(1.06); }
+.pumpkin:active .pumpkin__image { transform: scale(.92); }
+.pumpkin:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 4px; border-radius: 50%; }
+[data-theme="halloween"] .pumpkin { display: block; }
+
+/* Когда слева от шапки нет места, тыква висит в правом нижнем углу экрана */
+@media (max-width: 1330px) {
+  .pumpkin { top: auto; left: auto; right: 18px; bottom: 18px; width: 56px; filter: drop-shadow(0 6px 10px rgba(0, 0, 0, .35)); }
+}

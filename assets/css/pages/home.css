@@ -1,10 +1,11 @@
 .hero { background: var(--hero-bg); }
 .hero__inner { display: grid; grid-template-columns: 1.25fr .75fr; align-items: center; gap: 40px; padding: 64px 0 48px; }
-.hero__title { max-width: 14ch; font-size: var(--text-h1); }
+.hero__title { max-width: 12ch; font-size: var(--text-h1); }
+.hero__slogan { margin-top: 10px; font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 600; line-height: 1.1; color: var(--color-accent); }
 .hero__lead { margin-top: 22px; max-width: 52ch; font-size: var(--text-lg); color: var(--color-text); opacity: .86; }
 .hero__actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
 .hero__figure { justify-self: center; }
-.hero__image { width: min(380px, 100%); height: auto; }
+.hero__image { width: min(380px, 100%); height: auto; aspect-ratio: 420 / 520; }
 .home__more { font-weight: 600; }
 .home__services { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
 .home__reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }

@@ -1,34 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520">
-  <ellipse cx="210" cy="500" rx="120" ry="12" fill="#3B2A20" opacity=".12"/>
-  <!-- стойка -->
-  <rect x="203" y="330" width="14" height="150" rx="4" fill="#5B4232"/>
-  <path d="M140 490 L210 470 L280 490" fill="none" stroke="#5B4232" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- манекен -->
-  <path d="M170 60 C170 40 250 40 250 60 L258 82 C300 92 318 120 312 160 C306 196 290 214 284 240 C278 268 292 300 300 330 L120 330 C128 300 142 268 136 240 C130 214 114 196 108 160 C102 120 120 92 162 82 Z" fill="#E7CDA8"/>
-  <path d="M170 60 C170 40 250 40 250 60 L258 82 C300 92 318 120 312 160 C306 196 290 214 284 240 C278 268 292 300 300 330 L120 330 C128 300 142 268 136 240 C130 214 114 196 108 160 C102 120 120 92 162 82 Z" fill="none" stroke="#3B2A20" stroke-width="2.5"/>
-  <rect x="190" y="28" width="40" height="22" rx="6" fill="#5B4232"/>
+  <!-- тень -->
+  <ellipse cx="210" cy="500" rx="130" ry="10" fill="#3B2A20" opacity=".12"/>
+  <!-- стойка: штанга, втулка и две ножки, всё заканчивается на одной линии -->
+  <rect x="203" y="326" width="14" height="146" rx="3" fill="#5B4232"/>
+  <rect x="194" y="452" width="32" height="12" rx="4" fill="#4A352A"/>
+  <path d="M210 464 L146 492 M210 464 L274 492" fill="none" stroke="#5B4232" stroke-width="10" stroke-linecap="round"/>
+  <!-- манекен: симметричный силуэт -->
+  <path id="torso" d="M210 52 C226 52 236 56 238 64 C240 74 252 82 270 86 C298 92 314 108 316 134 C318 160 304 178 294 198 C284 218 282 238 288 258 C296 284 302 304 298 330 L122 330 C118 304 124 284 132 258 C138 238 136 218 126 198 C116 178 102 160 104 134 C106 108 122 92 150 86 C168 82 180 74 182 64 C184 56 194 52 210 52 Z" fill="#E7CDA8" stroke="#3B2A20" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M122 330 L298 330" stroke="#3B2A20" stroke-width="2.5"/>
+  <rect x="190" y="32" width="40" height="22" rx="6" fill="#5B4232"/>
   <!-- центральный шов -->
-  <path d="M210 60 C206 160 214 240 210 330" fill="none" stroke="#B5532E" stroke-width="2" stroke-dasharray="6 6"/>
+  <path d="M210 56 L210 328" stroke="#B5532E" stroke-width="2" stroke-dasharray="6 6"/>
   <!-- выкройка, приколотая к манекену -->
-  <path d="M220 120 L290 132 L282 228 L236 236 Z" fill="#FFFBF2" stroke="#3B2A20" stroke-width="2"/>
-  <path d="M230 132 L284 142 M228 150 L282 160" stroke="#C8A27F" stroke-width="1.5" stroke-dasharray="4 4"/>
-  <circle cx="226" cy="126" r="4" fill="#8C2F39"/><circle cx="284" cy="136" r="4" fill="#8C2F39"/>
-  <!-- сантиметровая лента -->
-  <path d="M150 84 C160 150 120 230 96 300 C88 324 92 352 104 372" fill="none" stroke="#E9C46A" stroke-width="18" stroke-linecap="round"/>
-  <path d="M150 84 C160 150 120 230 96 300 C88 324 92 352 104 372" fill="none" stroke="#3B2A20" stroke-width="2" stroke-dasharray="1.5 7" opacity=".7"/>
-  <path d="M258 84 C270 110 296 120 318 116" fill="none" stroke="#E9C46A" stroke-width="18" stroke-linecap="round"/>
-  <path d="M258 84 C270 110 296 120 318 116" fill="none" stroke="#3B2A20" stroke-width="2" stroke-dasharray="1.5 7" opacity=".7"/>
-  <!-- ножницы -->
-  <g transform="translate(300 380) rotate(-25)">
-    <circle cx="0" cy="0" r="14" fill="none" stroke="#8C2F39" stroke-width="6"/>
-    <circle cx="34" cy="0" r="14" fill="none" stroke="#8C2F39" stroke-width="6"/>
-    <path d="M10 -10 L70 -64 M24 -10 L-24 -70" stroke="#5B4232" stroke-width="6" stroke-linecap="round"/>
+  <path d="M224 122 L288 130 L282 222 L232 228 Z" fill="#FFFBF2" stroke="#3B2A20" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M234 140 L280 146 M232 160 L278 165 M231 180 L276 184" stroke="#C8A27F" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <circle cx="230" cy="128" r="4" fill="#8C2F39"/><circle cx="282" cy="136" r="4" fill="#8C2F39"/>
+  <!-- сантиметровая лента на шее: левый конец длинный, правый короче -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M190 62 C164 70 146 92 142 130 C138 172 126 216 122 262 C120 290 124 318 132 344" stroke="#E9C46A" stroke-width="16"/>
+    <path d="M190 62 C164 70 146 92 142 130 C138 172 126 216 122 262 C120 290 124 318 132 344" stroke="#3B2A20" stroke-width="2" stroke-dasharray="1.5 7" opacity=".7"/>
+    <path d="M230 62 C254 70 268 84 290 92 C306 98 314 112 318 132" stroke="#E9C46A" stroke-width="16"/>
+    <path d="M230 62 C254 70 268 84 290 92 C306 98 314 112 318 132" stroke="#3B2A20" stroke-width="2" stroke-dasharray="1.5 7" opacity=".7"/>
   </g>
-  <!-- катушка -->
-  <g transform="translate(70 410)">
-    <rect x="0" y="0" width="56" height="12" rx="3" fill="#5B4232"/>
-    <rect x="6" y="12" width="44" height="46" fill="#B5532E"/>
-    <path d="M6 22 H50 M6 32 H50 M6 42 H50" stroke="#8C2F39" stroke-width="2"/>
-    <rect x="0" y="58" width="56" height="12" rx="3" fill="#5B4232"/>
+  <!-- ножницы: два лезвия расходятся от винта, кольца симметричны -->
+  <g transform="translate(300 446) rotate(-28) scale(1.25)">
+    <g transform="rotate(-9)">
+      <path d="M-2 -3 C20 -7 46 -6 70 -1 C46 3 22 4 -2 3 Z" fill="#C9CED6" stroke="#4A4F57" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M-2 0 L-14 10" stroke="#8C2F39" stroke-width="4.5" stroke-linecap="round"/>
+      <circle cx="-22" cy="16" r="9" fill="#FBF4E6" stroke="#8C2F39" stroke-width="4.5"/>
+    </g>
+    <g transform="rotate(9)">
+      <path d="M-2 -3 C22 -4 46 -3 70 1 C46 6 20 7 -2 3 Z" fill="#B3B9C2" stroke="#4A4F57" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M-2 0 L-14 -10" stroke="#8C2F39" stroke-width="4.5" stroke-linecap="round"/>
+      <circle cx="-22" cy="-16" r="9" fill="#FBF4E6" stroke="#8C2F39" stroke-width="4.5"/>
+    </g>
+    <circle cx="0" cy="0" r="2.6" fill="#4A4F57"/>
+  </g>
+  <!-- катушка ниток -->
+  <g transform="translate(62 420)">
+    <rect x="0" y="0" width="56" height="10" rx="3" fill="#5B4232"/>
+    <rect x="6" y="10" width="44" height="50" fill="#B5532E"/>
+    <path d="M6 20 H50 M6 30 H50 M6 40 H50 M6 50 H50" stroke="#8C2F39" stroke-width="2"/>
+    <rect x="0" y="60" width="56" height="10" rx="3" fill="#5B4232"/>
   </g>
 </svg>

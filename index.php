@@ -24,7 +24,8 @@ $orderLink = current_user() ? 'account.php#new-order' : 'login.php?next=' . urle
 <section class="hero">
     <div class="hero__inner container">
         <div class="hero__content">
-            <h1 class="hero__title">Шьём по вашим меркам. И по меркам вашего героя.</h1>
+            <h1 class="hero__title">«Ателье воплощений»</h1>
+            <p class="hero__slogan">«От иглы к легенде»</p>
             <p class="hero__lead">Ателье «Лекало» шьёт, чинит и подгоняет повседневную одежду, а ещё собирает костюмы персонажей книг, фильмов, манги и игр к фестивалю и фотосессии.</p>
             <div class="hero__actions">
                 <a class="button" href="<?= e($orderLink) ?>">Оформить заказ</a>
@@ -32,7 +33,7 @@ $orderLink = current_user() ? 'account.php#new-order' : 'login.php?next=' . urle
             </div>
         </div>
         <figure class="hero__figure" aria-hidden="true">
-            <img class="hero__image" src="assets/img/ui/hero-dress-form.svg" alt="" width="420" height="520">
+            <?= str_replace('<svg ', '<svg class="hero__image" ', file_get_contents(__DIR__ . '/assets/img/ui/hero-dress-form.svg')) ?>
         </figure>
     </div>
 </section>

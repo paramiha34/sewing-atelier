@@ -16,8 +16,6 @@
 .logo__image { display: block; height: 50px; width: auto; }
 .logo__mark { fill: var(--logo-mark, var(--color-accent)); }
 .logo__word { fill: currentColor; }
-.logo__pumpkin { display: none; width: 44px; height: auto; }
-[data-theme="halloween"] .logo__pumpkin { display: block; }
 
 @media (max-width: 1240px) {
   .header__burger { display: block; }
